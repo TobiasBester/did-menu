@@ -1,0 +1,52 @@
+// Globals
+$body-font-family: 'Roboto', serif !important;
+$heading-font-family: 'Lato', serif;
+html,
+body,
+.v-application,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $body-font-family;
+}
+
+$border-radius-root: 6px;
+$font-size-root: 14px;
+
+.v-application {
+  font-family: $body-font-family !important;
+}
+
+// colors
+$primary: #F44336;
+$light-accent: #FCE4EC;
+$light-secondary: #FFFBE5;
+$gold: #FFD700;
+
+// images
+$landing-img-0: url('https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3829&q=80');
+$landing-img-2: url('https://images.unsplash.com/photo-1491961865842-98f7befd1a60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3888&q=80');
+$landing-img-3: url('https://images.unsplash.com/photo-1515022376298-7333f33e704b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3902&q=80');
+$pattern: url(src/assets/pattern.png);
+
+$landing-images: $landing-img-0, $landing-img-2, $landing-img-3;
+
+$key: random(length($landing-images));
+$nth: nth($landing-images, $key);
+
+$landing-img: $nth;
+
+.red-bg {
+  background-color: $primary;
+}
+
+// animations
+@keyframes shine {
+  from { -webkit-mask-position: 150% }
+  to { -webkit-mask-position: -50% }
+}
+
+@import '~vuetify/src/styles/styles.sass';

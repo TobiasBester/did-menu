@@ -5,12 +5,18 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "serve-open": "vue-cli-service serve --open"
   },
   "dependencies": {
+    "@vue/composition-api": "^0.3.4",
     "core-js": "^3.4.4",
+    "fullpage.js": "^3.0.8",
+    "gsap": "^3.1.1",
     "vue": "^2.6.10",
+    "vue-fullpage.js": "^0.1.5",
     "vue-router": "^3.1.3",
+    "vuetify": "^2.1.0",
     "vuex": "^3.1.2"
   },
   "devDependencies": {
@@ -24,8 +30,12 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.12.0",
+    "sass": "^1.19.0",
     "sass-loader": "^8.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-cli-plugin-vuetify": "^2.0.3",
+    "vue-cli-plugin-vuetify-preset-basil": "^1.0.1",
+    "vue-template-compiler": "^2.6.10",
+    "vuetify-loader": "^1.3.0"
   },
   "eslintConfig": {
     "root": true,
@@ -36,7 +46,13 @@
       "plugin:vue/essential",
       "@vue/standard"
     ],
-    "rules": {},
+    "rules": {
+      "semi": "off",
+      "indent": "off",
+      "no-tabs": "off",
+      "func-call-spacing": "off",
+      "comma-dangle": "off"
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
