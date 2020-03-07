@@ -28,7 +28,7 @@
 		},
 		computed: {
 			tileClass () {
-				return this.$vuetify.breakpoint.smAndUp
+				return this.$vuetify.breakpoint.lgAndUp
 					? 'display-2 pa-5 ma-5'
 					: 'display-1 pa-1 ma-1';
 			}

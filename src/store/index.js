@@ -6,7 +6,8 @@ Vue.use (Vuex);
 export default new Vuex.Store ({
 	state: {
 		drawer: false,
-		section: 'home'
+		section: 'home',
+		selectedMenuGroup: null
 	},
 	mutations: {
 		openDrawer (state) {
@@ -20,6 +21,9 @@ export default new Vuex.Store ({
 		},
 		setSection (state, section) {
 			state.section = section;
+		},
+		setSelectedMenuGroup (state, selectedGroup) {
+			state.selectedMenuGroup = selectedGroup;
 		}
 	},
 	actions: {},
@@ -29,6 +33,9 @@ export default new Vuex.Store ({
 		},
 		storeSection (state) {
 			return state.section;
+		},
+		selectedMenuGroup (state) {
+			return state.selectedMenuGroup;
 		}
 	},
 	modules: {},

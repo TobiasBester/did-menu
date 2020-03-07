@@ -39,7 +39,11 @@
 					anchors: copyMessages.anchors,
 					scrollingSpeed: 600,
 					dragAndMove: 'fingersonly',
-					afterLoad: this.afterFullPageLoad
+					afterLoad: this.afterFullPageLoad,
+					scrollOverflow: false,
+					fitToSection: true,
+					normalScrollElements: '.menu-group',
+					responsiveHeight: 600
 				},
 			};
 		},
@@ -64,7 +68,6 @@
 
 	.section {
 		text-align:center;
-		font-size: 3em;
 	}
 
 	.section-border {

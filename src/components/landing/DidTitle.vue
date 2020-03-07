@@ -10,7 +10,7 @@
 			</v-row>
 			<v-row justify="center" class="my-0 py-0">
 				<v-col cols="auto">
-					<span class="black--text">
+					<span class="font-weight-regular black--text display-1">
 						{{ subtext }}
 					</span>
 				</v-col>
